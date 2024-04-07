@@ -63,3 +63,42 @@ function logginUserName(username)
     return `${username} just logged in`
 }
 console.log(logginUserName())
+
+//Functions with Objects and arrays
+
+//With Rest Operator we can get multiple arguments
+function CalculateCarPrice(...num)//rest operator
+{
+    return num;
+}
+
+console.log(CalculateCarPrice(100,200,300));
+
+//Another example
+function CalculateCarPrice(val1,val2,...num)//rest operator
+{
+    return num;
+}
+
+console.log(CalculateCarPrice(200,300,400,5000));//[400,5000]-->rest opeartors-->nums' values
+
+
+//objects and their usage in functions
+//type safety is a big issue
+const user={
+    username:"Taimoor Ahmmad",
+    price:999
+}
+
+function handleObject(anyobject)
+{
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+handleObject(user);
+
+//another way of doing the same thing
+handleObject({
+    username:"sam",
+    price:399
+})
