@@ -44,4 +44,4 @@ const myObj={
 
 for (const [key,value] of myObj) {
     console.log(key,value)
-}//error objects are not iterate
+}//error objects are not iterateable in for of loop
