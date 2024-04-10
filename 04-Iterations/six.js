@@ -1,3 +1,5 @@
+//Use of filter functions
+
 /* main difference between for each loop and filter is that 
 filter returns the values while for each loop does not */
 
